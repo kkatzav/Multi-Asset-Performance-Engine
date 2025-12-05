@@ -9,7 +9,6 @@ def zscore(series):
     """Standardize a pandas Series."""
     return (series - series.mean()) / series.std(ddof=0)
 
-
 # ------------- Data download -------------
 
 def download_price_history(tickers, years_back=2):
